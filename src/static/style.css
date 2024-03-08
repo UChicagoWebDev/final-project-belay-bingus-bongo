@@ -1,0 +1,220 @@
+/* Global styles */
+body {
+  background-color: #cebe64;
+  margin: 0;
+  font-family: sans-serif;
+  position: relative; /* or use a specific parent container */
+}
+
+/* Style for the new element */
+.profileLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.create_or_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inlinecontainer{
+  text-align: center;
+}
+
+.inlinecontainer a{
+  padding: 10px 20px;
+  display:inline-block;
+  margin: 0 10px;
+  background-color: #457215;
+  text-decoration: none;
+  color: black;
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login_form label, .login_form input {
+  display: block; /* Makes each label and input take up its own line */
+  margin-bottom: 10px; /* Adds space below each label and input */
+}
+
+.login_form input {
+  margin-top: 5px; /* Adds a little extra space above each input for visual separation from its label */
+}
+
+button {
+  padding: 5px 5px;
+  display:inline-block;
+  margin: 0 10px;
+  background-color: #457215;
+  text-decoration: none;
+  color: black;
+}
+
+.loginButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.createAccountContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.signupForm label, .signupForm input {
+  display: block; /* Makes each label and input take up its own line */
+  margin-bottom: 10px; /* Adds space below each label and input */
+}
+
+.signupButtonContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.homePage {
+  display: flex
+}
+
+.channelListContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.channelList {
+  flex: 0 0 200px;
+  padding-left: 20px;
+  overflow-y: auto; /* Enables vertical scrolling if the content overflows */
+  background-color: #dace8d; /* Gives the sidebar a background color */
+  border-right: 2px solid #000; /* 2px wide, solid, black border on the right */
+}
+
+.homePageRight {
+  flex-grow: 1; /* Allows the content area to grow and fill the available space */
+  padding: 20px;
+  text-align: center;
+}
+
+.profileLink a{
+  padding: 10px 20px;
+  display:inline-block;
+  margin: 0 10px;
+  background-color: #457215;
+  text-decoration: none;
+  color: black;
+}
+
+.channelName {
+  margin-top: 6px; /* Adds space above the div */
+  margin-bottom: 6px; /* Adds space below the div */
+}
+
+.profilePage {
+  display: flex;
+}
+
+.profilePageRight {
+  flex-grow: 1;
+  justify-content: center; /* Centers children vertically in the container */
+  align-items: center; /* Centers children horizontally in the container */
+  height: 100vh; /* Adjust the height as needed, 100vh will take the full viewport height */
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}
+
+.channelPage {
+  display: flex;
+}
+
+.channelPageThread {
+  display: flex;
+}
+
+.channelPageRight {
+  flex-grow: 1;
+  padding-left: 40px;
+}
+
+.channelPageRight,
+.threadPageRight {
+  flex-grow: 1; /* Allows both elements to grow and fill the available space */
+  flex-basis: 0; /* Starts both elements with a width of 0% of the parent container */
+  width: 50%; /* Ensures each takes up half of the remaining space */
+}
+
+.username {
+  font-weight: bold;
+}
+
+.current-channel {
+  background-color: #f8eba1; /* Background color for highlighting */
+}
+
+.other:hover {
+  background-color: #ded8b3; /* Change background color on hover */
+}
+
+.channelName a {
+  padding: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .channelPage {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .channelListContainer {
+    display: flex;
+    min-height: 80px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .channelList {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables vertical scrolling if the content overflows */
+    background-color: #dace8d; /* Gives the sidebar a background color */
+    border-bottom: 2px solid #000; /* 2px wide, solid, black border on the right */
+  }
+  
+  .channelPageRight {
+    flex-grow: 1;
+  }
+
+  .channelPageThread {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .threadPageRight {
+    flex-grow: 1;
+    padding: 25px;
+  }
+
+  .narrowHide {
+    display: none;
+  }
+}
